@@ -2,7 +2,6 @@ package com.restful.restful.model;
 
 import jakarta.persistence.*;
 
-// when we upgrade spring version 2 to 3  validate is not working and persist is not working
 @Entity
 @Table(name = "employees")
 public class Employee {

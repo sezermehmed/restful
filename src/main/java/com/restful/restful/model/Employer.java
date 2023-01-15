@@ -2,28 +2,29 @@ package com.restful.restful.model;
 
 import jakarta.persistence.*;
 
-
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 @Entity
-@Table(name = "users")
-public class User {
-
-
+@Table(name = "employers")
+public class Employer {
     private Long id;
     private String firstName;
     private String lastName;
-    private String emailId;
-    private Integer age;
+    private List<String> otherInfos = new ArrayList<>();
 
-    // create an array variable
-    public User() {
-
-    }
-    public User( String firstName, String lastName, String emailId, Integer age) {
-
+    public Employer(Long id, String firstName, String lastName, List<String> otherInfos) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.emailId = emailId;
-        this.age = age;
+        this.otherInfos = otherInfos;
+    }
+
+    // create a list array with 3 integers
+    public Employer() {
+
+
     }
 
 
@@ -47,35 +48,26 @@ public class User {
     public String getLastName() {
         return lastName;
     }
+
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-    @Column(name = "email_address", nullable = false)
-    public String getEmailId() {
-        return emailId;
-    }
-    public void setEmailId(String emailId) {
-        this.emailId = emailId;
+    @Column(name = "other_infos", nullable = false)
+    public String getOtherInfos() {
+        return otherInfos.toString();
     }
 
-    @Column(name = "age", nullable = false)
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setOtherInfos(String otherInfos) {
+        this.otherInfos = Collections.singletonList(otherInfos);
     }
 
     @Override
     public String toString() {
-        return "User{" +
+        return "Employer{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", emailId='" + emailId + '\'' +
-                ", age=" + age +
+                ", otherInfos=" + otherInfos +
                 '}';
     }
-
 }

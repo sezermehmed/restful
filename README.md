@@ -51,18 +51,22 @@ The app will start running at <http://localhost:8080>.
 
 The app defines following CRUD APIs.
 
-    GET /api/v1/employees
+    GET /employees                      or /users               or /employers
     
-    POST /api/v1/employees
+    POST /employees                     or /users               or /employers
     
-    GET /api/v1/employees/{employeeId}
+    GET /employees/{employeeId}         or /users/{userId}      or /employers/{employerId}
     
-    PUT /api/v1/employees/{employeeId}
+    PUT /employees/{employeeId}         or /users/{userId}      or /employers/{employerId}
     
-    DELETE /api/v1/employees/{employeeId}
+    DELETE /employees/{employeeId}      or /users/{userId}      or /employers/{employerId}
 
 You can test them using postman or any other rest client.
 
+##  *Useful Articles for this project*
+
+* [Code Structure](https://www.geeksforgeeks.org/spring-boot-code-structure/)
+* 
 
 
 

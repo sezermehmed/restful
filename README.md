@@ -6,13 +6,13 @@ This is a simple RESTful API with Spring Boot, Postgres and Hibernate.
 
 ##  *Requirements*
 
+* Any IDE (IntelliJ)
 * Java 17+
 * Maven
 * Postgres
-* Postman any other API client
+* Postman or Ins any other API client
 * Git
-* Docker
-* Any IDE (IntelliJ, Eclipse, Netbeans, etc)
+* Docker (Optional for Postgres)
 ##  *Steps to Setup*
 
 **1. Clone the application**
@@ -24,7 +24,7 @@ git clone https://github.com/sezermehmed/restful
 **2. Create Postgres database**
 
 ```bash
-create database springbootdb
+create database postgres
 ```
 
 **3. Change Postgres username and password as per your installation**
@@ -36,7 +36,7 @@ create database springbootdb
 
 ```bash
 mvn package
-java -jar target/springboot-postgres-hibernate-crud-rest-api-0.0.1-SNAPSHOT.jar
+java -jar target/restful-0.0.1-SNAPSHOT.jar
 ```
 
 Alternatively, you can run the app without packaging it using -

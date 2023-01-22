@@ -5,16 +5,6 @@
 This is a simple RESTful API with Spring Boot, Postgres and Hibernate.
 
 ##  *Requirements*
-<<<<<<< HEAD
-* Any IDE (IntelliJ IDEA)
-* Java 17+
-* Maven
-* Postgres
-* Postman or Insomnia or any other API client
-* Git
-* Docker for Postgres (optional)
-
-=======
 
 * Any IDE (IntelliJ)
 * Java 17+
@@ -23,7 +13,6 @@ This is a simple RESTful API with Spring Boot, Postgres and Hibernate.
 * Postman or Ins any other API client
 * Git
 * Docker (Optional for Postgres)
->>>>>>> 84d58b58166ffa33a6bd89d40d13e4998e241323
 ##  *Steps to Setup*
 
 **1. Clone the application**
@@ -46,11 +35,7 @@ Since the default “postgres” user does not have a password, you should set i
 **2. Create Postgres database**
 
 ```bash
-<<<<<<< HEAD
 CREATE DATABASE postgres;
-=======
-create database postgres
->>>>>>> 84d58b58166ffa33a6bd89d40d13e4998e241323
 ```
 
 **3. Change Postgres username and password as per your installation**
@@ -62,11 +47,7 @@ create database postgres
 
 ```bash
 mvn package
-<<<<<<< HEAD
 java -jar target/restful-0.0.1-SNAPSHOT.jar 
-=======
-java -jar target/restful-0.0.1-SNAPSHOT.jar
->>>>>>> 84d58b58166ffa33a6bd89d40d13e4998e241323
 ```
 
 Alternatively, you can run the app without packaging it using -

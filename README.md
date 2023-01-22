@@ -10,7 +10,7 @@ This is a simple RESTful API with Spring Boot, Postgres and Hibernate.
 * Java 17+
 * Maven
 * Postgres
-* Postman any other API client
+* Postman or any other API client
 * Git
 * Docker (Optional for Postgres)
 ##  *Steps to Setup*

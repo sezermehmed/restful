@@ -2,7 +2,7 @@
 
 ##  *Introduction*
  
-This is a simple RESTful API with Spring Boot, Postgres and Hibernate.
+This is a simple Restful Crud API with Spring Boot, Postgres and Hibernate.
 
 ##  *Requirements*
 
@@ -13,6 +13,8 @@ This is a simple RESTful API with Spring Boot, Postgres and Hibernate.
 * Postman or any other API client
 * Git
 * Docker (Optional for Postgres)
+
+
 ##  *Steps to Setup*
 
 **1. Clone the application**

@@ -1,7 +1,6 @@
 package com.restful.restful.controller;
 
 import com.restful.restful.exception.ResourceNotFoundException;
-import com.restful.restful.model.Employee;
 import com.restful.restful.model.Employer;
 import com.restful.restful.repository.EmployerRepository;
 import jakarta.validation.Valid;
